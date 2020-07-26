@@ -1,0 +1,138 @@
+.current {
+  &__cards-box {
+  }
+  &__card {
+    width: 21.07rem;
+    height: 15rem;
+    overflow: hidden;
+    &--1 {
+      background-color: blue;
+
+      &:hover {
+        .overlay {
+          background-color: $purple-color;
+        }
+      }
+    }
+    &--2 {
+      background-image: url(../images/shaadowthumbnail.jpg);
+      background-size: cover;
+      background-position: center;
+      &:hover {
+        .overlay {
+          background-color: $light-blue;
+        }
+      }
+    }
+    &--3 {
+      background-image: url(../images/oassisfun.png);
+      background-size: cover;
+      background-position: center;
+      &:hover {
+        .overlay {
+          background-color: $purple-color;
+        }
+      }
+    }
+    &--4 {
+      background-color: $green-color;
+      background-image: url(../images/babyshark.jpg);
+      background-size: cover;
+      background-position: center;
+      &:hover {
+        .overlay {
+          background-color: $green-color;
+        }
+      }
+    }
+    &--5 {
+      background-image: url(../images/woosh3.jpg);
+      background-size: cover;
+      background-position: center;
+      &:hover {
+        .overlay {
+          background-color: #fff978;
+        }
+      }
+    }
+    &--6 {
+      background-image: url(../images/ice-r.png);
+      background-size: cover;
+      background-position: right;
+      &:hover {
+        .overlay {
+          background-color: $brown-light-color;
+        }
+      }
+    }
+    &--7 {
+      background-image: url(../images/hatoota.png);
+      background-size: cover;
+      background-position: center;
+      &:hover {
+        .overlay {
+          background-color: $red-color;
+        }
+      }
+    }
+    &--8 {
+      background-image: url(../images/eiid.jpg);
+      background-size: cover;
+      background-position: left;
+      &:hover {
+        .overlay {
+          background-color: $green-light-color;
+        }
+      }
+    }
+    &:hover {
+      .overlay {
+        opacity: 1;
+      }
+    }
+  }
+  &__side {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__heading {
+    position: relative;
+    padding-bottom: 1rem;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25%;
+      height: 20px;
+      bottom: 0;
+      left: 37%;
+      border-bottom: 1px solid $gray-color;
+    }
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 21.07rem;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: $brown-color;
+}
+.text {
+  color: $black-color;
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

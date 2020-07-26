@@ -1,0 +1,9 @@
+.details {
+    overflow: hidden;
+    justify-content: space-between;
+  &__header {
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+  }
+}

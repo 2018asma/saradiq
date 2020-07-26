@@ -1,0 +1,27 @@
+.planing {
+  height:300px
+  &__icon-box {
+   
+  }
+  &__icon-available{
+    color: $blue-color;
+  }
+  &__icon-busy{
+        color: $dark-gray-color;
+  }
+  &__icon-yours{
+        color: $green-color;
+  }
+}
+.feature{
+cursor: pointer;
+list-style: none;
+width: 60px;
+align-items: center;
+li{
+  font-size: .9rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+}
